@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Nav = () => {
   return (
-    <div>
-        <Link to ="/">Home</Link>
-        <Link to ="/About">About</Link>
-        <Link to ="/service">Service</Link>
+    <div className="flex gap-x-10">
+        <NavLink style={(e)=>e.isActive?{textDecoration:"underline"}:{}} className={(e)=> e.isActive? "text-red-400":""} to ="/">Home</NavLink>
+        <NavLink style={(e)=>e.isActive?{textDecoration:"underline"}:{}} className={(e)=> e.isActive? "text-red-400":""} to ="/About">About</NavLink>
+        <NavLink style={(e)=>e.isActive?{textDecoration:"underline"}:{}} className={(e)=>e.isActive? "text-red-400":""} to ="/service">Service</NavLink>
     </div>
   )
 }
