@@ -3,6 +3,8 @@ import Nav from "./components/Nav"
 import Home from "./components/Home"
 import About from "./components/About"
 import Service from "./components/Service"
+import List from "./components/List"
+import ListItem from "./components/ListItem"
 import Pagenotfound from './components/Pagenotfound'
 
 const App = () => {
@@ -13,6 +15,8 @@ const App = () => {
         <Route path = "/" element={<Home/>}/>
         <Route path = "/About" element={<About/>}/>
         <Route path = "/service" element={<Service/>}/>
+        <Route path='/List' element={<List/>}/>
+        <Route path='/List/:i' element={<ListItem/>}/>
         <Route path='*' element={<Pagenotfound/>} />
 
 
