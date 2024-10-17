@@ -9,14 +9,16 @@ import Pagenotfound from './components/Pagenotfound'
 
 const App = () => {
   return (
-    <div className='w-[80%] rounded-md my-10 mt-10 mx-20  bg-rose-200'>
+    <div className='w-[80%] rounded-md my-10 mt-10 mx-20  bg-rose-100 h-[700px]'>
       <Nav/>
       <Routes>
         <Route path = "/" element={<Home/>}/>
         <Route path = "/About" element={<About/>}/>
         <Route path = "/service" element={<Service/>}/>
-        <Route path='/List' element={<List/>}/>
-        <Route path='/List/:i' element={<ListItem/>}/>
+        <Route path='/List' element={<List/>}>
+                <Route path='/List/:i' element={<ListItem/>}/>
+
+        </Route>
         <Route path='*' element={<Pagenotfound/>} />
 
 
