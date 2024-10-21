@@ -9,7 +9,7 @@ import Pagenotfound from './components/Pagenotfound'
 
 const App = () => {
   return (
-    <div className='w-[80%] rounded-md my-10 mt-10 mx-20  bg-rose-100 h-[700px]'>
+    <div className='w-[80%] rounded-md my-10 mt-10 mx-20 text-2xl bg-rose-100 h-[700px]'>
       <Nav/>
       <Routes>
         <Route path = "/" element={<Home/>}/>
